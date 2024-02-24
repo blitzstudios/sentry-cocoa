@@ -89,6 +89,11 @@ NS_SWIFT_NAME(Scope)
 - (void)clearBreadcrumbs;
 
 /**
+ * Gets all breadcrumbs.
+ */
+- (NSArray<SentryBreadcrumb *> *)breadcrumbs;
+
+/**
  * Serializes the Scope to JSON
  */
 - (NSDictionary<NSString *, id> *)serialize;
